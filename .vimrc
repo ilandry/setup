@@ -2,7 +2,7 @@
 set so=7
 
 " show line numbers
-set numer
+set number
 
 " force english lang
 let $LANG='en'
@@ -46,7 +46,7 @@ set mat=2
 
 " silent
 set noerrorbells
-set nobisualbell
+set novisualbell
 set t_vb=
 set tm=500
 
@@ -55,7 +55,7 @@ syntax enable
 
 " theme
 set background=dark
-set colorscheme desert
+color desert
 
 " 1 tab == 4 spaces
 set expandtab
