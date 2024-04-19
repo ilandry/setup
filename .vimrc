@@ -70,6 +70,5 @@ set si
 " wrap lines
 set wrap
 
-
-
-
+" remove trail whitespaces
+autocmd BufWritePre * :%s/\s\+$//e
