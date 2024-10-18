@@ -72,3 +72,7 @@ set wrap
 
 " remove trail whitespaces
 autocmd BufWritePre * :%s/\s\+$//e
+
+" grep alias
+command -nargs=* Gr grep -rn --include=*.{H,C}
+command -nargs=* Gri grep -rni --include=*.{H,C}
