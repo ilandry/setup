@@ -74,5 +74,5 @@ set wrap
 autocmd BufWritePre * :%s/\s\+$//e
 
 " grep alias
-command -nargs=* Gr grep -rn --include=*.{H,C}
-command -nargs=* Gri grep -rni --include=*.{H,C}
+command -nargs=* Gr grep -rn . --include=*.{H,C}
+command -nargs=* Gri grep -rni . --include=*.{H,C}
