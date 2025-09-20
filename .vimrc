@@ -87,5 +87,5 @@ autocmd BufWritePre * :%s/\s\+$//e
 autocmd BufEnter * :highlight clear
 
 " grep alias
-command -nargs=* Gr grep -rn <args> . --include=*.{H,C}
-command -nargs=* Gri grep -rni <args> . --include=*.{H,C}
+command -nargs=* Gr grep -rn <args> . --include=*.{H,C,h,hpp,cpp,cxx,py}
+command -nargs=* Gri grep -rni <args> . --include=*.{H,C,h,hpp,cpp,cxx,py}
