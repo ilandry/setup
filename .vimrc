@@ -1,4 +1,4 @@
-" 7 lines cursor moving 
+" 7 lines cursor moving
 set so=7
 
 " show line numbers
@@ -55,7 +55,17 @@ syntax enable
 
 " theme
 set background=dark
-color desert
+colors desert
+
+" hide status line
+set laststatus=0
+
+" remove split borders
+highlight VertSplit cterm=NONE
+let &statusline='%#Normal# '
+set fillchars=stl:-
+set fillchars+=stlnc:-
+set fillchars+=vert:\| "vfill
 
 " 1 tab == 4 spaces
 set expandtab
@@ -64,7 +74,7 @@ set shiftwidth=2
 set tabstop=2
 
 " smart auto indent
-set ai 
+set ai
 set si
 
 " wrap lines
@@ -72,6 +82,9 @@ set wrap
 
 " remove trail whitespaces
 autocmd BufWritePre * :%s/\s\+$//e
+
+" clear highlight
+autocmd BufEnter * :highlight clear
 
 " grep alias
 command -nargs=* Gr grep -rn <args> . --include=*.{H,C}
